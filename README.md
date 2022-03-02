@@ -22,7 +22,7 @@ El objetivo de este repositorio es el de proveer una clase en TeX del modelo del
 
 ## Instrucciones
 
-Únicamente se requiere compilar el documento se requiere`pdflatex` varios paquetes usuales disponibles tanto en las distribuciones MikTex y TeXLive. En particular, esta clase hace un uso extensivo del paquete `longtable`.
+Únicamente se requiere compilar el documento se requiere`pdflatex` varios paquetes usuales disponibles tanto en las distribuciones MikTex y TeXLive. En particular, esta clase hace un uso extensivo de los paquetes `longtable` y `etoolbox`.
 
 ### Datos, bloques, secciones y subsecciones
 
@@ -65,6 +65,10 @@ Se han establecido otros comandos de entrada por secciones adaptados a los datos
 - `\entradaEnum{texto}` crea una entrada simple enumerada con `texto`.
 
 - `\entradadoble[<NDoc1A>][<NDoc2A>]{ textoA }[<NDoc1B>][<NDoc2B>]{ textoB }` crea una entrada doble diferenciada con los respectivos textos y números de documentos.
+
+### Hiperenlaces
+
+El paquete `hyperref` viene cargado por defecto, por lo que se pueden usar los comandos `\href` y `\url` directamente.
 
 ## To-Do
 

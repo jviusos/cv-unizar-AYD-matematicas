@@ -18,7 +18,7 @@
 % Loading the article documentclass and processing the options
 % ==================================================================
 
-\LoadClass[a4paper,10pt,reqno]{article}
+\LoadClass[a4paper,10pt]{article}
 
 % ==================================================================
 % Loading packages
@@ -42,9 +42,7 @@
 \RequirePackage{etoolbox}
 \RequirePackage{fancyhdr}
 \RequirePackage[colorlinks=true]{hyperref}
-
-% Mathematics
-\RequirePackage{amsmath, amsthm, amssymb, amsfonts}
+\RequirePackage{amssymb}
 
 % ==================================================================
 % Option declarations
