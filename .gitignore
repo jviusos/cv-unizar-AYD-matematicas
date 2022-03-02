@@ -253,3 +253,4 @@ TSWLatexianTemp*
 
 # standalone packages
 *.sta
+.cv_modelo_unizar.tex.kate-swp

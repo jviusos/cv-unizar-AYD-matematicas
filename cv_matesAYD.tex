@@ -1,0 +1,155 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Modelo de CV de la Universidad de Zaragoza
+% Version 0.9 (09/06/2020)
+%
+% Creado por:
+% Juan Viu Sos
+% https://jviusos.github.io/
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{cvunizar}
+
+
+% ====================================================================
+% Math Commands and Operators	(define new commands for your text)
+% ====================================================================
+\newcommand\NN{{\mathbb N}}
+\newcommand\ZZ{{\mathbb Z}}
+\newcommand\QQ{{\mathbb Q}}
+\newcommand\RR{{\mathbb R}}
+\newcommand\CC{{\mathbb C}}
+
+
+
+
+% ********************************************************************
+% BODY OF THE DOCUMENT
+% ********************************************************************
+\begin{document}
+
+\pagestyle{styleUnizar}
+
+% NOTAS:
+% 	- Usar "\newline" para salto de linea dentro de los comandos de entrada.
+%
+% 	- Para crear espacio vertical, se recomiendo usar el comando \entrada{}, quien genera una linea vacía sin añadir el NºDoc.
+%
+% 	- Uso: \entrada[<NDoc1>][<NDoc1>]{ Texto } produce una entrada con "Texto" y documentos asociados "NDoc1-NDoc2" o "NDoc1" (si <NDoc2>=vacio). El contador de documentos continua a partir de NDoc2 (resp. NDoc1), asignando los numeros de documentos de las siguientes entradas auomaticamente si no se pasan nuevos parámetros.
+%
+%	- Se han establecido otros comandos de entrada por secciones adaptados a los datos que se piden.
+%
+%   - Los comandos \cvlibro, \cvcapitulo y \cvarticulo solo admiten un parámetro opcional para elegir NDoc.
+
+
+
+
+% ====================================================================
+% PORTADA
+% ====================================================================
+
+% Archivo de la firma (nombre del fichero imagen, dejar vacio si no hay)
+\Firma{firma.png}
+
+% Tipo de Plazas
+\TipoPlazas{Profesor Ayudante Doctor}
+\Departamento{Matem\'{a}ticas}
+\Areas{
+	\'{A}LGEBRA\\
+	AN\'{A}LISIS MATEM\'{A}TICO\\
+	DID\'{A}CTICA DE LA MATEM\'{A}TICA\\
+	GEOMETR\'{I}A Y TOPOLOG\'{I}A
+}
+
+
+% ====================================================================
+% DATOS PERSONALES
+% ====================================================================
+
+% Datos Personales
+\Nombre{Henri}
+\Apellidos{Poincar\'e}
+\DocIdentificacion{FR29041854}
+% Nacimiento
+\NacFecha{29/04/1854}
+\NacProvincia{Lorraine}
+\NacLocalidad{Nancy}
+% Residencia
+\ResProvincia{Huesca}
+\ResLocalidad{Jaca}
+\ResCodPostal{22700}
+\ResDomicilio{C/Mayor 24}
+% Contacto
+\Tlfno{XXXXXXXXX}
+\Email{hpoincare87@facdessciences.org}
+
+
+
+% ====================================================================
+% DATOS PERSONALES
+% ====================================================================
+
+
+\Centro{ETSI de Caminos, Canales y Puentes. Universidad Polit\'ecnica de Madrid.} % Empresa/Centro/Entidad
+
+\Actividad{Profesor docente e investigador.} % Actividad principal
+
+\Categoria{Profesor Ayudante Doctor.} % Categoria Profesional
+
+% Comentar la siguiente linea si no se quiere este bloque
+% \bloqueSituacionActual
+
+
+
+
+% ====================================================================
+% BLOQUES
+% ====================================================================
+
+
+\begin{bloque}{FORMACI\'{O}N ACAD\'{E}MICA}
+	\input{bloques/formacion}
+\end{bloque}
+\newpage
+
+
+\begin{bloque}{DOCENCIA}
+	\input{bloques/docencia}
+\end{bloque}
+\newpage
+	
+
+\begin{bloque}{PUBLICACIONES}
+	\input{bloques/publicaciones}
+\end{bloque}
+\newpage
+
+
+\begin{bloque}{PARTICIPACI\'{O}N EN PROYECTOS Y CONTRATOS DE INVESTIGACI\'{O}N}
+	\input{bloques/proyectos}
+\end{bloque}
+\newpage
+
+
+\begin{bloque}{RESTANTE ACTIVIDAD INVESTIGADORA}
+	\input{bloques/restante_investigacion}
+\end{bloque}
+\newpage
+    
+    
+
+\begin{bloque}{%
+	OTROS M\'{E}RITOS {\Large no valorados en los apartados anteriores}\newline
+	{\large Si se incluyen m\'{a}s de 10 méritos, s\'{o}lo se considerar\'{a}n los diez primeros}%
+	}%
+	\input{bloques/otros}
+\end{bloque}
+
+
+
+
+
+\end{document}
