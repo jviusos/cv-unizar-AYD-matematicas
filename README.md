@@ -12,7 +12,7 @@ Se proveen dos ficheros con el CV:
 
 Adicionalmente, se añaden dos imágenes del logo de la universidad (`unizar_logo.png`) y el archivo con la firma (`firma.png`).
 
-En el modelo del ejemplo, los diversos bloques del CV se organizan opcionalmente en ficheros independientes para facilitar su rellenado.
+En el modelo del ejemplo, los diversos bloques del CV se organizan opcionalmente en ficheros independientes para facilitar su cumplimentación.
 
 El objetivo de este repositorio es el de proveer una clase en TeX del modelo del CV, incluyendo de forma automática:
 
@@ -44,7 +44,7 @@ La estructura del documento se divide en:
 
 ### Campos
 
-Para el rellenado de entradas en los otros bloques:
+Para el cumplimentado de entradas en los otros bloques:
 
 - **Uso básico:** `\entrada[<NDoc1>][<NDoc2>]{ Texto }` produce una entrada con `Texto` y nº de documentos asociados `NDoc1-NDoc2` o `NDoc1` (si `<NDoc2>=vacio`). El contador de documentos continua a partir del valor de `NDoc2` (resp. `NDoc1`), asignando los números de documentos de las siguientes entradas automaticamente si no se pasan nuevos parámetros. **Importante:** El uso vacío de nº de documento como `\entrada[]{ Texto }` genera una entrada <u>sin</u> nº de documento asociado.
 
