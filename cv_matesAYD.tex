@@ -1,6 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % LaTeX Modelo de CV de la Universidad de Zaragoza
-% Version 0.9 (09/06/2020)
+% Version 0.9 (02/03/2022)
 %
 % Creado por:
 % Juan Viu Sos
@@ -34,15 +34,25 @@
 \pagestyle{styleUnizar}
 
 % NOTAS:
-% 	- Usar "\newline" para salto de linea dentro de los comandos de entrada.
+% - **Uso básico:** `\entrada[<NDoc1>][<NDoc2>]{ Texto }` produce una entrada con `Texto` y nº de documentos asociados `NDoc1-NDoc2` o `NDoc1` (si `<NDoc2>=vacio`). El contador de documentos continua a partir del valor de `NDoc2` (resp. `NDoc1`), asignando los números de documentos de las siguientes entradas automaticamente si no se pasan nuevos parámetros. **Importante:** El uso vacío de nº de documento como `\entrada[]{ Texto }` genera una entrada <u>sin</u> nº de documento asociado.
 %
-% 	- Para crear espacio vertical, se recomiendo usar el comando \entrada{}, quien genera una linea vacía sin añadir el NºDoc.
+% - Usar `\newline` para salto de linea dentro de los comandos de entrada.
 %
-% 	- Uso: \entrada[<NDoc1>][<NDoc1>]{ Texto } produce una entrada con "Texto" y documentos asociados "NDoc1-NDoc2" o "NDoc1" (si <NDoc2>=vacio). El contador de documentos continua a partir de NDoc2 (resp. NDoc1), asignando los numeros de documentos de las siguientes entradas auomaticamente si no se pasan nuevos parámetros.
+% - Para crear espacio vertical, se recomienda usar el comando `\entrada{}`, esto genera una linea vacía sin añadir el NºDoc. Si se quiere añadir como preámbulo a una (sub)sección, se puede usar `\preambNDoc{}`.
 %
-%	- Se han establecido otros comandos de entrada por secciones adaptados a los datos que se piden.
+% Se han establecido otros comandos de entrada por secciones adaptados a los datos que se piden: `\cventrada`, `\cajaSI`,`\cajaNO`, `\cvdocencia`, `\cvdescription`,`\cvlibro`, `\cvcapitulo`, `\cvarticulo`, `\cvproyecto`, `\entradaEnum` y `\entradadoble`.
 %
-%   - Los comandos \cvlibro, \cvcapitulo y \cvarticulo solo admiten un parámetro opcional para elegir NDoc.
+% - `\cventrada[<NDoc1>][<NDoc2>]{ texto1 }{ texto2 }{ texto3 }{ texto4 }` genera una entrada con texto: "**texto1**, _texto2_, texto3 (texto 4)." con o sin los números de documentos correspondientes. Muy útil para rellenar las entradas en las que haya que describir también lugares y fechas.
+%
+% - `\cajaSI[<NDoc1>][<NDoc2>]{ texto }` y `\cajaNO[<NDoc1>][<NDoc2>]{ texto }` generan una entrada con `texto` añadiendo al final cajitas SI/NO marcadas con el correspondiente _check_.
+%
+% - `\cvdocencia` funciona de forma similar a `cventrada`, pero combinado con `\cvdescription{texto}` de forma seguida, crea un solo bloque con una entrada con el item de docencia y otra seguida con una descripción.
+%
+% - Los comandos `\cvlibro`, `\cvcapitulo`, `\cvarticulo`, `\cvproyecto`, `\cvcharla`, `\cvminicurso`, `\cvshortcomm`, `\cvposter` y `\cvestancia` están adaptados al apartado correspondiente. Se puede ver su uso en el *.tex del modelo. **Importante:** `\cvarticulo` solo admite un parámetro opcional para fijar `NDoc`.
+%
+% - `\entradaEnum{texto}` crea una entrada simple enumerada con `texto`.
+%
+% - `\entradadoble[<NDoc1A>][<NDoc2A>]{ textoA }[<NDoc1B>][<NDoc2B>]{ textoB }` crea una entrada doble diferenciada con los respectivos textos y números de documentos.
 
 
 
